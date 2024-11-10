@@ -59,7 +59,7 @@
             bindings = <
 &trans    &trans   &trans   &trans   &trans    &trans                       &trans      &trans    &trans    &trans   &trans    &trans
 &trans    &kp LBRC &kp LBKT &kp LPAR &kp AMPS  &kp CARET                    &trans      &kp UNDER &kp LPAR  &kp LBKT &kp LBRC  &trans
-&trans    &kp RBRC &kp RBKT &kp RPAR &kp ASTRK &kp GRAVE                    &trans      &kp trans &kp RPAR  &kp RBKT &kp RBRC  &trans
+&trans    &kp RBRC &kp RBKT &kp RPAR &kp ASTRK &kp GRAVE                    &trans      &trans    &kp RPAR  &kp RBKT &kp RBRC  &trans
 &trans    &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &trans   &kp BSLH  &trans
                             &trans   &trans    &trans    &kp DEL  &trans    &trans      &trans    &trans
             >;

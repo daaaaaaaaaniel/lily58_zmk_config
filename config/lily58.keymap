@@ -21,11 +21,11 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  ENTER |  |  ESC  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //                     | ALT  | GUI  | LOWER|  SPACE |  | SPACE | RAISE| BSPC  | GUI   |
             bindings = <
-&kp LCTRL &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                                            &kp N6     &kp N7   &kp N8    &kp N9  &kp N0   &kp RCTRL
-&kp LCMD  &kp Q  &kp W  &kp E    &kp R    &kp T                                             &kp Y      &kp U    &kp I     &kp O   &kp P    &kp RCMD
-&kp LALT  &kp A  &kp S  &kp D    &kp F    &kp G                                             &kp H      &kp J    &kp K     &kp L   &kp SEMI &kp RALT
-&kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B      &kp RET             &kp ESC            &kp N      &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                        &kp LALT &kp LGUI &lt 1 BSPC &ht_tp LSHFT SPACE  &ht_tp RSHFT SPACE &lt 2 DEL &kp BSPC &kp RGUI
+&kp LCTRL &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                                              &kp N6     &kp N7   &kp N8    &kp N9  &kp N0   &kp RCTRL
+&kp LCMD  &kp Q  &kp W  &kp E    &kp R    &kp T                                               &kp Y      &kp U    &kp I     &kp O   &kp P    &kp RCMD
+&kp LALT  &kp A  &kp S  &kp D    &kp F    &kp G                                               &kp H      &kp J    &kp K     &kp L   &kp SEMI &kp RALT
+&kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B      &kp RET              &kp ESC             &kp N      &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+                        &kp LALT &kp LGUI &lt 1 BSPC &ht_tp LSHIFT SPACE  &ht_tp RSHIFT SPACE &lt 2 DEL &kp BSPC &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -39,11 +39,11 @@
 // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   | ENTER |       |
 //                     |      |      |      |        |  | BSPC  |      |       |       |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                          &trans    &trans    &trans    &trans    &trans    &trans
-&trans     &trans           &trans            &kp UP            &trans       &trans                                &trans    &kp MINUS &kp UP    &kp EQUAL &trans    &trans
-&trans     &kp EXCL         &kp LEFT          &kp DOWN          &kp RIGHT    &kp PRCNT                             &kp CARET &kp LEFT  &kp DOWN  &kp RIGHT &kp RPAR  &trans
-&trans     &trans           &trans            &trans            &trans       &trans    &trans   &trans             &trans    &kp MINUS &kp PLUS  &kp LBRC  &kp RET   &trans
-                                              &trans            &trans       &trans    &trans   &ht_tp RSHFT BSPC  &trans    &trans    &trans
+&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                           &trans    &trans    &trans    &trans    &trans    &trans
+&trans     &trans           &trans            &kp UP            &trans       &trans                                 &trans    &kp MINUS &kp UP    &kp EQUAL &trans    &trans
+&trans     &kp EXCL         &kp LEFT          &kp DOWN          &kp RIGHT    &kp PRCNT                              &kp CARET &kp LEFT  &kp DOWN  &kp RIGHT &kp RPAR  &trans
+&trans     &trans           &trans            &trans            &trans       &trans    &trans   &trans              &trans    &kp MINUS &kp PLUS  &kp LBRC  &kp RET   &trans
+                                              &trans            &trans       &trans    &trans   &ht_tp RSHIFT BSPC  &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -57,11 +57,11 @@
 // |       |  !  |  @  |  #   |  $   |  %   |        |  |       |  +   |   -   |   =   |      |   \   |       |
 //                     |      |      |      | DELETE |  |       |      |       |       |
             bindings = <
-&trans    &trans   &trans   &trans   &trans    &trans                                &trans      &trans    &trans    &trans   &trans    &trans
-&trans    &kp LBRC &kp LBKT &kp LPAR &kp AMPS  &kp CARET                             &trans      &kp UNDER &kp LPAR  &kp LBKT &kp LBRC  &trans
-&trans    &kp RBRC &kp RBKT &kp RPAR &kp ASTRK &kp GRAVE                             &trans      &trans    &kp RPAR  &kp RBKT &kp RBRC  &trans
-&trans    &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT &trans            &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &trans   &kp BSLH  &trans
-                            &trans   &trans    &trans    &ht_tp LSHFT DEL  &trans    &trans      &trans    &trans
+&trans    &trans   &trans   &trans   &trans    &trans                                 &trans      &trans    &trans    &trans   &trans    &trans
+&trans    &kp LBRC &kp LBKT &kp LPAR &kp AMPS  &kp CARET                              &trans      &kp UNDER &kp LPAR  &kp LBKT &kp LBRC  &trans
+&trans    &kp RBRC &kp RBKT &kp RPAR &kp ASTRK &kp GRAVE                              &trans      &trans    &kp RPAR  &kp RBKT &kp RBRC  &trans
+&trans    &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT &trans             &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &trans   &kp BSLH  &trans
+                            &trans   &trans    &trans    &ht_tp LSHIFT DEL  &trans    &trans      &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
